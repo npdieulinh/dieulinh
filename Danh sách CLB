@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Câu lạc bộ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+
+        .club-list-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            color: #444;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        .section-title {
+            color: #E60000; /* Approximate red color */
+            font-weight: bold;
+            display: list-item;
+            list-style-type: disc;
+            list-style-position: outside;
+            margin-left: 1em;
+            margin-top: 1em;
+        }
+
+        ul, ol {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            padding-left: 1.5em;
+        }
+
+        /* Styling for the numeric lists (1, 2, 3...) */
+        .numeric-list li {
+            color: #333;
+            margin-bottom: 0.3em;
+        }
+
+        /* Styling for the alphabetic lists (a, b, c...) */
+        .alpha-list {
+            list-style-type: lower-alpha;
+            padding-left: 2em; /* Deeper nesting */
+        }
+        
+        .alpha-list li {
+             color: #0000CC; /* Approximate blue color for sub-items */
+             margin-bottom: 0.3em;
+        }
+
+        .list-header {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        
+        /* Note: Icons cannot be implemented purely with standard HTML/CSS without external images/font-awesome */
+        /* The images next to the titles are omitted here */
+
+    </style>
+</head>
+<body>
+
+    <div class="club-list-container">
+        <div class="list-header">Danh sách Câu lạc bộ</div>
+
+        <ul>
+            <li class="section-title" style="list-style-type: disc;">THỂ THAO</li>
+            <ol class="numeric-list">
+                <li>Bóng đá</li>
+                <li>Bóng chuyền</li>
+                <li>Bóng rổ</li>
+                <li>Võ
+                    <ol class="alpha-list">
+                        <li>Karatedo</li>
+                        <li>Taekwondo</li>
+                        <li>Vovinam</li>
+                    </ol>
+                </li>
+                <li>Bơi</li>
+            </ol>
+
+            <li class="section-title" style="list-style-type: disc;">NGHỆ THUẬT</li>
+            <ol class="numeric-list">
+                <li>Mĩ thuật</li>
+                <li>Nhiếp ảnh</li>
+                <li>Âm nhạc
+                    <ol class="alpha-list">
+                        <li>Thanh nhạc</li>
+                        <li>Piano</li>
+                        <li>Violin</li>
+                    </ol>
+                </li>
+                <li>Khiêu vũ</li>
+            </ol>
+        </ul>
+    </div>
+
+</body>
+</html>
